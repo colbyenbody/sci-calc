@@ -1,5 +1,7 @@
-# scicalc
+# sci-calc
 
-A CLI calculator for algebraic formulas
+A CLI calculator for algebraic formulas.
 
-Currently working on adding quadtradic formula
+Quadratic formula function is complete.
+
+Working on adding a function for factoring binomials.
