@@ -9,6 +9,10 @@ int main()
    int choice;
 
    printf("1: Quadratic Formula\n");
+   printf("2: Coming Soon!\n");
+   printf("3: Coming Soon!\n");
+   printf("4: Coming Soon!\n");
+   printf("5: Coming Soon!\n");
 
    printf("Select an option: ");
    scanf("%d", &choice);
@@ -37,32 +41,35 @@ int main()
    }
 }
 
-void quadratic(){
-   
+void quadratic()
+{
+
    double a, b, c, discriminant, root1, root2, realNum, imaginaryNum;
-    printf("Enter coefficients a, b and c: ");
-    scanf("%lf %lf %lf", &a, &b, &c);
+   printf("Enter coefficients a, b and c: ");
+   scanf("%lf %lf %lf", &a, &b, &c);
 
-    discriminant = (b * b) - (4 * a * c);
+   discriminant = (b * b) - (4 * a * c);
 
-    // two distinct real roots/solutions
-    if (discriminant > 0) {
-        root1 = (-b + sqrt(discriminant)) / (2 * a);
-        root2 = (-b - sqrt(discriminant)) / (2 * a);
-        printf("root1 = %.2lf and root2 = %.2lf", root1, root2);
-    }
+   // two distinct real roots/solutions
+   if (discriminant > 0)
+   {
+      root1 = (-b + sqrt(discriminant)) / (2 * a);
+      root2 = (-b - sqrt(discriminant)) / (2 * a);
+      printf("root1 = %.5lf and root2 = %.5lf", root1, root2);
+   }
 
-    // one repeated real solution
-    else if (discriminant == 0) {
-        root1 = root2 = -b / (2 * a);
-        printf("root1 = root2 = %.2lf;", root1);
-    }
+   // one repeated real solution
+   else if (discriminant == 0)
+   {
+      root1 = root2 = -b / (2 * a);
+      printf("root1 = root2 = %.5lf;", root1);
+   }
 
-    // two distinct complex solutions
-    else {
-        realNum = -b / (2 * a);
-        imaginaryNum = sqrt(-discriminant) / (2 * a);
-        printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", realNum, imaginaryNum, realNum, imaginaryNum);
-    }
-
+   // two distinct complex solutions
+   else
+   {
+      realNum = -b / (2 * a);
+      imaginaryNum = sqrt(-discriminant) / (2 * a);
+      printf("root1 = %.5lf+%.5lfi and root2 = %.5f-%.5fi", realNum, imaginaryNum, realNum, imaginaryNum);
+   }
 }
