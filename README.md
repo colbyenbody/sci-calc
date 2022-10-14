@@ -4,4 +4,4 @@ A CLI calculator for algebraic formulas.
 
 Quadratic formula function is complete.
 
-Working on adding a function for factoring binomials.
+Working on adding a function for factoring trinomials.
